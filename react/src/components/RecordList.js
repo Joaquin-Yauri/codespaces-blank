@@ -147,7 +147,7 @@ function RecordsList({ onSelectRecord }) {
                 <p>No records found for the selected filters.</p>
             ) : (
                 <div className='record-table-wrap'>
-                    <table>
+                    <table className='records-table'>
                         <thead>
                             <tr>
                                 <th>Lap Time</th>

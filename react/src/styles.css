@@ -534,6 +534,24 @@ tr:hover td {
     margin-bottom: 14px;
 }
 
+.records-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 14px;
+}
+
+.records-table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+}
+
+.records-table th,
+.records-table td {
+    white-space: nowrap;
+}
+
 @media (max-width: 820px) {
     .form-grid,
     .form-grid--tight {
