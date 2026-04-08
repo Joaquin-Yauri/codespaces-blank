@@ -153,8 +153,8 @@ function RecordsList({ onSelectRecord }) {
                                 <th>Lap Time</th>
                                 <th>Circuit</th>
                                 <th>Constructor</th>
-                                <th>Weather</th>
-                                <th>Controller</th>
+                                <th className='hide-mobile'>Weather</th>
+                                <th className='hide-mobile'>Controller</th>
                                 <th>Date</th>
                                 <th>Details</th>
                             </tr>
@@ -165,8 +165,8 @@ function RecordsList({ onSelectRecord }) {
                                     <td>{formatLapTimeMs(record.lap_time_ms)}</td>
                                     <td>{record.circuit_name}</td>
                                     <td>{record.constructor_name}</td>
-                                    <td>{record.weather}</td>
-                                    <td>{record.controller_type}</td>
+                                    <td className='hide-mobile'>{record.weather}</td>
+                                    <td className='hide-mobile'>{record.controller_type}</td>
                                     <td>{record.record_date}</td>
                                     <td>
                                         <button onClick={() => onSelectRecord(record.id)}>
